@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>김미혜 — UI/UX 포트폴리오</title>
+<meta name="description" content="UI/UX 디자이너 김미혜 포트폴리오">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+  body { margin: 0; background: #10131A; }
+  * { box-sizing: border-box; }
+  a { color: inherit; text-decoration: none; }
+  .serif { font-family: 'Noto Sans KR', sans-serif; }
+  .tag { display: inline-flex; align-items: center; padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500; background: #1B2330; color: #C7D2E0; }
+  .navlink:hover { color: #4C8DFF; }
+  .frame { border-radius: 14px; overflow: hidden; border: 1px solid #2A3340; box-shadow: 0 16px 36px rgba(0,0,0,0.5); background: #F5F7FA; }
+  .framebar { height: 28px; background: #E7ECF2; display: flex; align-items: center; gap: 6px; padding: 0 12px; }
+  .dot { width: 8px; height: 8px; border-radius: 999px; background: #C9D2DE; }
+  .shot-btn { display: block; width: 100%; padding: 0; margin: 0; border: none; background: none; cursor: zoom-in; text-align: left; }
+  .shot-btn:hover .frame { box-shadow: 0 20px 44px rgba(0,0,0,0.6); }
+
+  body { word-break: keep-all; overflow-wrap: break-word; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  .lightbox { position: fixed; inset: 0; background: rgba(4,6,10,0.9); display: none; align-items: center; justify-content: center; padding: 40px; z-index: 50; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 92vw; max-height: 88vh; border-radius: 10px; box-shadow: 0 24px 64px rgba(0,0,0,0.6); background: #F5F7FA; }
+  .lightbox .close { position: fixed; top: 24px; right: 28px; width: 40px; height: 40px; border-radius: 999px; border: none; background: rgba(255,255,255,0.14); color: #fff; font-size: 16px; cursor: pointer; }
+  @media (max-width: 640px) {
+    .grid2 { grid-template-columns: 1fr !important; }
+    h1 { font-size: 34px !important; }
+    h3 { font-size: 20px !important; }
+    .lightbox { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; background: #10131A; font-family: 'Noto Sans KR', sans-serif; color: #F4F7FB; position: relative;">
+
+  <!-- 상단 네비 -->
+  <div style="position: sticky; top: 0; z-index: 10; width: 100%; background: rgba(16,19,26,0.85); backdrop-filter: blur(6px); border-bottom: 1px solid #232B38;">
+    <div style="max-width: 880px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;">
+      <a href="#top" class="serif" style="font-size: 16px; font-weight: 700;">김미혜</a>
+      <div style="display: flex; gap: 20px; font-size: 13px; color: #9FA8B8;">
+        <a href="#about" class="navlink">소개</a>
+        <a href="#projects" class="navlink">프로젝트</a>
+        <a href="#contact" class="navlink">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 히어로 -->
+  <div id="top" style="max-width: 880px; margin: 0 auto; padding: 96px 24px 72px; display: flex; flex-direction: column; gap: 20px;">
+    <span class="tag" style="width: fit-content; background: rgba(76,141,255,0.18); color: #4C8DFF;">UI/UX Designer</span>
+    <h1 class="serif" style="margin: 0; font-size: 44px; line-height: 1.3; font-weight: 700; color: #FFFFFF;">김미혜</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 1.75; color: #9FA8B8; max-width: 620px;">
+      기능을 쓰는 사람의 입장에서 먼저 생각하고, 그 기능에 맞는 화면을 만드는 UI/UX 디자이너입니다.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+      <span class="tag">Vessellink · UI/UX Designer</span>
+      <span class="tag">VLDS 디자인 시스템 운영</span>
+      <span class="tag">UI/UX · 인쇄물 · 일러스트레이션</span>
+    </div>
+  </div>
+
+  <!-- 소개 -->
+  <div id="about" style="max-width: 880px; margin: 0 auto; padding: 40px 24px 72px; border-top: 1px solid #232B38;">
+    <h2 class="serif" style="margin: 0 0 16px; font-size: 22px; font-weight: 700; color: #FFFFFF;">소개</h2>
+    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+      <p style="margin: 0; font-size: 15px; line-height: 1.85; color: #9FA8B8;">
+        UI/UX는 기능을 쓰는 사람의 입장에서 생각하는 일이라고 봅니다.
+        일관성도 중요하지만, 모든 기능을 같은 틀에 맞추기보다 그 기능에 맞는 형태를 먼저 찾으려고 합니다.
+      </p>
+      <p style="margin: 0; font-size: 15px; line-height: 1.85; color: #9FA8B8;">
+        Vessellink에서 해운·해사 데이터 화면을 디자인하고, VLDS 디자인 시스템의 컴포넌트와 컬러 체계를 관리하고 있습니다.
+        가장 애정이 가는 작업은 Flexibility Mechanism 모달입니다. 선택할 수 있는 옵션을 리스트로 보여주는 형태와 그 구조를 잡았습니다.
+      </p>
+      <p style="margin: 0; font-size: 15px; line-height: 1.85; color: #9FA8B8;">
+        인쇄물 작업도 좋아합니다. 실물로 확인할 수 있고, 작품과 배경이 같아도 타이포를 어떻게 잡느냐에 따라 보이는 인상이 달라지기 때문입니다.
+      </p>
+      <p style="margin: 0; font-size: 15px; line-height: 1.85; color: #9FA8B8;">
+        앞으로는 AI로 리서치와 분석을 빠르게 하고, 그 결과를 바탕으로 사용자 입장에서 디자인하는 방식으로 일하려고 합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 프로젝트 -->
+  <div id="projects" style="max-width: 880px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 64px; border-top: 1px solid #232B38;">
+    <h2 class="serif" style="margin: 40px 0 0; font-size: 22px; font-weight: 700; color: #FFFFFF;">Projects</h2>
+
+    <!-- Case Study: FuelEU -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="tag" style="width: fit-content;">Vessellink · XD</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF;">FuelEU Maritime Fleet Performance<br>— Flexibility Mechanism</h3>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.8; color: #9FA8B8;">
+          FuelEU 규제 대응을 위해 선단 전체의 컴플라이언스 밸런스를 관리하는 화면. 선박별 잉여/부족분을
+          Banking · Borrowing · Pooling 옵션에 배정해 규제 페널티를 관리할 수 있도록 설계했다.
+          이 화면의 핵심 기능은 <b style="color: #FFFFFF;">Flexibility Mechanism</b> — 선박을 옵션별로 묶어 배정하는 기능이다.
+        </p>
+      </div>
+
+      <button class="shot-btn" data-src="img/fueleu-dashboard.png" data-alt="FuelEU Maritime Fleet Performance 대시보드" aria-label="FuelEU 대시보드 화면 확대해서 보기">
+        <div class="frame">
+          <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <img src="img/fueleu-dashboard.png" loading="lazy" alt="FuelEU Maritime Fleet Performance 대시보드 — Summary, 월별 Penalty 그래프, Flexibility Mechanism 요약 표" style="width: 100%; display: block;">
+        </div>
+      </button>
+      <p style="margin: -8px 0 0; font-size: 12px; color: #7C8798; text-align: center;">전체 모니터링 대시보드 — Summary · 월별 Penalty 추이 · Flexibility Mechanism 요약 (클릭 시 확대)</p>
+
+      <div class="grid2" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/fueleu-modal.png" data-alt="Flexibility Mechanism 옵션 배정 모달" aria-label="옵션 배정 모달 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/fueleu-modal.png" loading="lazy" alt="Flexibility Mechanism 모달 — 옵션 리스트와 선박 배정 테이블" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">옵션 배정 모달</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/fueleu-states.png" data-alt="모달 상태별 스펙" aria-label="상태별 스펙 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/fueleu-states.png" loading="lazy" alt="모달의 상태별 스펙 — 옵션 미적용, 로딩, 적용됨, 전체선택, 에러/저장 메시지" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">상태별 스펙 (로딩 · 에러 · 전체선택)</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">역할</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">전체 레이아웃과 플로우 설계, Flexibility Mechanism 모달 UI, 로딩·에러·전체선택 등 상태별 디테일까지 직접 디자인했다.</p>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">디자인 포인트</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>대시보드 상단에는 선단 전체의 핵심 수치와 추이를 한눈에 볼 수 있도록 Summary·그래프 영역을 배치했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>옵션 배정 작업은 별도로 집중할 수 있는 흐름이 필요하다고 판단해 모달로 분리했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>왼쪽에 옵션 리스트, 오른쪽에 선박 배정 테이블을 두어 여러 옵션을 오가며 다루기 쉽게 구성했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>Compliance Balance는 여러 선박 값의 합산 결과라 한눈에 인지되도록 강조색으로 처리했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>선박이 많을 때도 대응할 수 있도록 개별 선택과 전체선택을 함께 제공했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>저장 전 경고·API 에러 메시지는 모달 위에 모달을 띄우는 대신, 이전에 설계했던 하단 인라인 메시지 패턴을 그대로 인용해 적용했다.</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 18px; border-radius: 12px; background: #1B2330;">
+          <div style="font-size: 13px; font-weight: 700; color: #C7D2E0; margin-bottom: 6px;">고민한 지점</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #9FA8B8;">기존 페이지들과의 비주얼 통일성을 맞추다 보니, 하단의 항해/레그 단위 리스트가 상대적으로 적은 영역만 노출되는 트레이드오프가 있었다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study: Performance Analysis -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="tag" style="width: fit-content;">Vessellink · Figma</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF;">Performance Analysis<br>— 선박 성능 분석 대시보드</h3>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.8; color: #9FA8B8;">
+          선박의 Speed Loss, Speed Power Curve, FOC(연료소모) 등 운항 성능 데이터를 분석하는 화면.
+          기존에는 Logger · Noon · Both 같은 데이터 소스를 화면 우측 상단에서 전환하는 정도였지만, 분석에 필요한 소스를 직접 커스텀할 수 있도록 바뀌고
+          그 외 데이터 옵션·필터 기능이 늘어나면서, 이 모든 조작을 좌측 패널로 모아 <b style="color: #FFFFFF;">사용성</b>을 끌어올렸다.
+        </p>
+      </div>
+
+      <button class="shot-btn" data-src="img/performance-analysis.png" data-alt="Performance Analysis 대시보드" aria-label="Performance Analysis 대시보드 화면 확대해서 보기">
+        <div class="frame">
+          <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <img src="img/performance-analysis.png" loading="lazy" alt="Performance Analysis 대시보드 — 좌측 선박/기간/소스/데이터 옵션/필터 패널, Speed Loss 추이 차트, Speed Power Curve, FOC Table" style="width: 100%; display: block;">
+        </div>
+      </button>
+      <p style="margin: -8px 0 0; font-size: 12px; color: #7C8798; text-align: center;">선박 성능 분석 대시보드 — 좌측 통합 필터 패널 · Speed Loss 추이 · Speed Power Curve · FOC Table (클릭 시 확대)</p>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">역할</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">기존 Performance Analysis 페이지를 더 세련되고 정돈된 화면으로 리뉴얼하며 전체 레이아웃을 새로 설계했고, 새로 추가된 기능에 필요한 모달 UI를 설계했다.</p>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">디자인 포인트</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>기존 우측 상단의 소스 전환과, 이후 늘어난 데이터 옵션·필터 기능을 좌측 패널로 통합해 한 곳에서 조작할 수 있게 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>상단 KPI 요약 바에 Speed Loss, ME RPM, ME Power, FOC 등 핵심 수치를 나열형으로 배치해 한눈에 비교할 수 있게 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>Speed Power Curve에는 Ballast · Laden 조건별 Guarantee Points를 직접 입력해 커스텀 기준선을 정의하는 기능(Manage Guarantee Points)을 포함했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>FOC 데이터는 Table과 Map 두 가지 보기로 제공해, 수치 비교뿐 아니라 위치 기반으로도 데이터를 확인할 수 있게 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>좌측 조작 옵션이 늘어나며 하단 영역이 가려질 수 있는 점을 고려해, 옵션 영역을 아코디언(접고 펼치기)으로 설계했다.</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 18px; border-radius: 12px; background: #1B2330;">
+          <div style="font-size: 13px; font-weight: 700; color: #C7D2E0; margin-bottom: 6px;">고민한 지점</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #9FA8B8;">좌측에 조작해야 할 항목이 많아지는 와중에도 하단의 conditions 영역이 잘리지 않도록, 아코디언 구조로 공간을 확보하는 트레이드오프를 택했다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study: VLDS -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="tag" style="width: fit-content;">VLDS</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF;">VLDS 디자인 시스템<br>— 파운데이션 &amp; 컴포넌트 정의</h3>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.8; color: #9FA8B8;">
+          베슬링크의 디자인 시스템 VLDS를 처음부터 구축한 것은 아니고, 이어받아 운영하며 파운데이션 정리와 컴포넌트 정의 작업을 맡았다.
+          컬러는 팀원들과 논의를 거쳐 함께 다듬었고, 흩어져 있던 타이포그래피 스케일은 직접 취합해 재정리했으며, 스페이싱은 팀과 함께 규칙을 정했고
+          그리드·브레이크포인트 체계는 직접 정리했다. 컴포넌트 쪽은 <b style="color: #FFFFFF;">정의서 포맷 자체를 설계</b>해 여러 컴포넌트에 동일한 틀로 적용했다.
+        </p>
+      </div>
+
+      <button class="shot-btn" data-src="img/vlds-color.png" data-alt="VLDS Color Primitive & Semantic" aria-label="VLDS 컬러 시스템 화면 확대해서 보기">
+        <div class="frame">
+          <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <img src="img/vlds-color.png" loading="lazy" alt="VLDS Color_Primitive · Color_Semantic — Blue/Gray/Warm Gray/Red/Green/Yellow 팔레트와 Primary/Neutral/Status 시맨틱 컬러" style="width: 100%; display: block;">
+        </div>
+      </button>
+      <p style="margin: -8px 0 0; font-size: 12px; color: #7C8798; text-align: center;">파운데이션 — Color Primitive &amp; Semantic (클릭 시 확대)</p>
+
+      <div class="grid2" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/vlds-typeface.png" data-alt="VLDS Typeface" aria-label="타이포그래피 스케일 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/vlds-typeface.png" loading="lazy" alt="VLDS Typeface·Typescale — Display/Heading/Body/Label 스케일 정리" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">Typeface — 흩어진 내용 취합·재정리</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/vlds-grid.png" data-alt="VLDS Grid system & Breakpoint" aria-label="그리드 시스템과 브레이크포인트 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/vlds-grid.png" loading="lazy" alt="VLDS Grid system — 12-Column grid와 Breakpoint 표" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">Grid &amp; Breakpoint — 직접 정리</p>
+        </div>
+      </div>
+
+      <div class="grid2" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/vlds-dropdown-states.png" data-alt="Dropdown 컴포넌트 상태 매트릭스" aria-label="Dropdown 컴포넌트 상태 매트릭스 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/vlds-dropdown-states.png" loading="lazy" alt="Dropdown 컴포넌트 — Select·Searchable 모드별 Default/Focused/Open/Error 등 상태 매트릭스" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">Dropdown — 상태 매트릭스</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/vlds-dropdown-spec.png" data-alt="Dropdown 정의서" aria-label="Dropdown 정의서 문서 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/vlds-dropdown-spec.png" loading="lazy" alt="Dropdown 정의서 — 개요, 사용기준(DO/DON'T), 스펙, 피그마 설정, 검토 체크리스트 포맷" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">컴포넌트 정의서 — 직접 설계한 포맷</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">역할</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">VLDS 파운데이션 정리 및 컴포넌트 정의서 포맷 설계·작성.</p>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">디자인 포인트</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>여러 곳에 흩어져 있던 타이포그래피 스케일(Display·Heading·Body·Label)을 하나로 취합해 재정리했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>그리드 시스템과 브레이크포인트(12-Column, 2xs~2xl)를 직접 정리해 반응형 기준을 명확히 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>스페이싱은 팀과 함께 4의 배수 규칙을 정하고, 그 기준에 맞춰 체계를 정리했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>컬러(Primitive·Semantic)는 팀원들과 논의를 거쳐 함께 다듬었다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>컴포넌트 정의서 포맷(개요 → 사용기준 DO/DON'T → 스펙 → 피그마 설정 → 검토 체크리스트)을 직접 설계해, 이후 다른 컴포넌트에도 같은 틀로 적용할 수 있게 했다.</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 18px; border-radius: 12px; background: #1B2330;">
+          <div style="font-size: 13px; font-weight: 700; color: #C7D2E0; margin-bottom: 6px;">고민한 지점</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #9FA8B8;">일관성을 유지하면서도 재사용 가능한 형태로 정리하는 게 가장 어려운 부분이었다. 흩어진 요소를 기준에 맞춰 정리하는 데 시간이 걸렸고, 컴포넌트는 비슷한 기능의 네이밍을 두고 의견이 부딪히는 경우도 있었다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study: Brand Identity -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="tag" style="width: fit-content;">인쇄물 · 이벤트 · 브랜드</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF;">LAB021 &amp; VESSELLINK 로고<br>— 브랜드 아이덴티티</h3>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.8; color: #9FA8B8;">
+          회사 로고(LAB021)와 제품 로고(VESSELLINK)를 모두 디자인했다. 두 로고 모두 같은 블루를 아이덴티티 컬러로 써서
+          "선박과 육상을 하나로 연결한다"는 의미를 담았고, <b style="color: #FFFFFF;">블루 · 블랙 · 그레이 · 화이트</b> 네 가지 배경에서
+          각각 어떤 버전을 쓸지까지 정의해 실제 적용 시 헷갈리지 않도록 가이드로 정리했다.
+        </p>
+      </div>
+
+      <div class="grid2" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/brand-lab021.jpg" data-alt="LAB021 Brand Identity" aria-label="LAB021 브랜드 아이덴티티 가이드 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/brand-lab021.jpg" loading="lazy" alt="LAB021 Brand Identity — 브라켓 형태의 로고, 컬러값(Blue/Black/White), 블루·블랙·그레이·화이트 배경별 적용" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">LAB021 — 회사 로고</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/brand-vessellink.jpg" data-alt="VESSELLINK Brand Identity" aria-label="VESSELLINK 브랜드 아이덴티티 가이드 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/brand-vessellink.jpg" loading="lazy" alt="VESSELLINK Brand Identity — Ubuntu 폰트 워드마크, 컬러값(Blue/Black/White), 블루·블랙·그레이·화이트 배경별 적용" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">VESSELLINK — 제품 로고</p>
+        </div>
+      </div>
+
+      <button class="shot-btn" data-src="img/brand-business-card.png" data-alt="LAB021 명함 목업" aria-label="LAB021 명함 목업 화면 확대해서 보기">
+        <div class="frame">
+          <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <img src="img/brand-business-card.png" loading="lazy" alt="LAB021 명함 목업 — 국문/영문 양면, 로고와 블루 포인트 컬러를 적용한 실제 적용 사례" style="width: 100%; display: block;">
+        </div>
+      </button>
+      <p style="margin: -8px 0 0; font-size: 12px; color: #7C8798; text-align: center;">명함 — 국문 · 영문 양면 적용 사례 (클릭 시 확대)</p>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">역할</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">회사 로고(LAB021)와 제품 로고(VESSELLINK) 디자인, 컬러·폰트 사용 기준을 포함한 브랜드 아이덴티티 가이드 제작, 명함 등 실제 적용물 디자인.</p>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">디자인 포인트</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>LAB021 로고는 대괄호 형태의 프레임으로 선박(바다)과 육상을 하나로 묶는다는 의미를 표현하고, Roboto 고딕체로 신뢰감을 주는 방향으로 디자인했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>VESSELLINK 워드마크는 Ubuntu 폰트를 쓰고 첫 글자 V에만 블루를 포인트로 주어, 로고 전체보다 아이덴티티 컬러가 먼저 읽히도록 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>두 로고 모두 같은 블루(RGB 0·137·255)를 공유해 회사-제품 간 소속감을 유지하면서도, 서체와 형태로 "회사"와 "제품"의 위계를 구분했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>블루 · 블랙 · 그레이 · 화이트 네 가지 배경 각각에 정컬러 혹은 화이트 반전 버전 중 무엇을 쓸지 정의해, 실제 적용 시 혼선이 없도록 가이드를 함께 만들었다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>명함에는 로고를 블루 포인트 그대로 두고, 정보 항목(T·M·F·E·A)의 라벨에만 블루를 써서 로고의 포인트 컬러와 정보 위계가 같은 언어로 읽히게 했다. 국문·영문 양면을 함께 제작했다.</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 18px; border-radius: 12px; background: #1B2330;">
+          <div style="font-size: 13px; font-weight: 700; color: #C7D2E0; margin-bottom: 6px;">고민한 지점</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #9FA8B8;">같은 블루를 공유하면서도 LAB021의 브라켓 프레임과 VESSELLINK의 워드마크는 서로 다른 형태 언어를 쓴다. 두 로고를 나란히 놓았을 때 하나의 브랜드로 읽히면서도 "회사"와 "제품"이라는 각자의 역할이 흐려지지 않게 균형을 맞추는 게 관건이었다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study: Busan Meridian Summit -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="tag" style="width: fit-content;">인쇄물 · 이벤트</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF;">BUSAN MERIDIAN SUMMIT 2026<br>— 행사 인쇄물</h3>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.8; color: #9FA8B8;">
+          LAB021·ABB가 공동 주최한 해운업 컨퍼런스 "Busan Meridian Summit 2026"의 세미나 네임태그와
+          <b style="color: #FFFFFF;">현수막</b> 출력물을 디자인했다. 다크 네이비 바탕에 흐르는 데이터 입자를 모티브로 삼아,
+          디지털·해양 산업 컨퍼런스라는 성격을 한눈에 전달하고자 했다.
+        </p>
+      </div>
+
+      <div class="grid2" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/busan-print-mockup.png" data-alt="Busan Meridian Summit 2026 인쇄물 목업" aria-label="행사 인쇄물 목업 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/busan-print-mockup.png" loading="lazy" alt="BUSAN MERIDIAN SUMMIT 2026 인쇄물 목업 — 타이틀 현수막(로고·QR코드·스폰서 로고)과 세션 일정표" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">출력물 목업 — 타이틀 현수막 &amp; 세션 일정표</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="shot-btn" data-src="img/busan-venue.jpg" data-alt="Busan Meridian Summit 2026 행사 현장 사진" aria-label="행사 현장 사진 화면 확대해서 보기">
+            <div class="frame">
+              <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <img src="img/busan-venue.jpg" loading="lazy" alt="행사 현장 — 무대 양옆 현수막과 메인 스크린에 적용된 디자인, 좌석을 채운 참석자들" style="width: 100%; display: block;">
+            </div>
+          </button>
+          <p style="margin: 0; font-size: 12px; color: #7C8798; text-align: center;">행사 현장 적용 사진</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">역할</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">세미나 네임태그 · 현수막 등 행사 출력물 디자인.</p>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">디자인 포인트</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>다크 네이비 바탕에 흐르는 블루 데이터 입자를 모티브로 써서, 해운·디지털 산업 컨퍼런스라는 성격을 멀리서도 읽히게 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>공동 주최·후원사 로고(LAB021, ABB, inmarsat, ACT, DNV, Acceleron 등)를 위계에 맞춰 상단과 하단에 나누어 배치했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>세션 일정표는 시간·세션명·발표사를 표 형태로 정리하고, 패널 토론 등 강조할 항목만 블루 텍스트로 구분해 가독성을 높였다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>설문·발표자료용 QR코드를 타이틀 영역에 함께 배치해, 현장에서 바로 접근할 수 있게 했다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study: Illustration -->
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="tag" style="width: fit-content;">Vessellink · Illustration</span>
+        <h3 class="serif" style="margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF;">해운산업 자율운항 안내도<br>— 일러스트레이션</h3>
+        <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.8; color: #9FA8B8;">
+          해운산업의 자율운항 개념을 설명하기 위한 아이소메트릭 일러스트레이션. VESSELLINK 대시보드를 중심에 두고,
+          왼쪽에는 여러 해운사의 선박 데이터가 모이는 흐름을, 오른쪽에는 그 데이터를 처리하는
+          <b style="color: #FFFFFF;">AI 에이전트</b>와 항만·기상·에너지·탄소·안전·규제 영역을 한 장면에 담았다.
+        </p>
+      </div>
+
+      <button class="shot-btn" data-src="img/illustration-autonomous-shipping.png" data-alt="해운산업 자율운항 안내도 일러스트레이션" aria-label="해운산업 자율운항 안내도 일러스트레이션 화면 확대해서 보기">
+        <div class="frame">
+          <div class="framebar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <img src="img/illustration-autonomous-shipping.png" loading="lazy" alt="해운산업 자율운항 안내도 — VESSELLINK 대시보드, 해운사 A·B·C의 데이터 흐름, 데이터·운영·보급 에이전트와 AI 원격관제, 항만·기상·에너지·탄소·안전·규제 영역을 담은 아이소메트릭 일러스트레이션" style="width: 100%; display: block;">
+        </div>
+      </button>
+      <p style="margin: -8px 0 0; font-size: 12px; color: #7C8798; text-align: center;">해운산업 자율운항 안내도 (클릭 시 확대)</p>
+
+      <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">역할</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">해운산업 자율운항 컨셉을 설명하는 안내용 일러스트레이션 기획·제작.</p>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: #4C8DFF; margin-bottom: 6px;">디자인 포인트</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>중앙의 VESSELLINK 대시보드를 기준점으로 삼아, 왼쪽에는 해운사들로부터 올라오는 데이터 흐름을, 오른쪽에는 그 데이터를 처리하는 에이전트와 영역들을 배치해 전체 구조가 한눈에 읽히게 구성했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>데이터·운영·보급 에이전트와 AI 원격관제를 로봇 아이콘 배지로 통일해, 사람이 아닌 자동화된 주체라는 것이 바로 구분되게 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>선박에서 대시보드로 이어지는 경로에 데이터 큐브 아이콘을 띄워, 설명 문구 없이도 "데이터가 모인다"는 흐름이 읽히도록 했다.</span>
+            </div>
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.7; color: #9FA8B8;">
+              <span style="color: #4C8DFF;">·</span>
+              <span>블루 계열 그라데이션과 네온 하이라이트로 기술·자동화의 인상을 주면서도, 톤을 절제해 과하게 화려해지지 않도록 했다.</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 18px; border-radius: 12px; background: #1B2330;">
+          <div style="font-size: 13px; font-weight: 700; color: #C7D2E0; margin-bottom: 6px;">고민한 지점</div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #9FA8B8;">항만·기상·에너지·탄소·안전·규제까지 설명해야 할 요소가 많다 보니, 하나의 장면에 다 담으면서도 복잡해 보이지 않게 영역을 나누고 시선의 흐름을 설계하는 게 가장 어려운 부분이었다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" style="max-width: 880px; margin: 0 auto; padding: 56px 24px 96px; border-top: 1px solid #232B38; display: flex; flex-direction: column; gap: 10px;">
+    <h2 class="serif" style="margin: 0 0 8px; font-size: 22px; font-weight: 700; color: #FFFFFF;">Contact</h2>
+    <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">Email — [이메일 주소]</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #9FA8B8;">Portfolio / SNS — [링크]</p>
+  </div>
+
+  <div style="width: 100%; padding: 24px; text-align: center; font-size: 12px; color: #7C8798; border-top: 1px solid #232B38;">
+    © 2026 Mihye Kim
+  </div>
+
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="이미지 확대 보기">
+  <button class="close" id="lightbox-close" aria-label="닫기">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+(function () {
+  var box = document.getElementById('lightbox');
+  var img = document.getElementById('lightbox-img');
+  function open(src, alt) { img.src = src; img.alt = alt || ''; box.classList.add('open'); }
+  function close() { box.classList.remove('open'); img.src = ''; }
+  document.querySelectorAll('.shot-btn').forEach(function (b) {
+    b.addEventListener('click', function () { open(b.dataset.src, b.dataset.alt); });
+  });
+  box.addEventListener('click', function (e) { if (e.target !== img) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+</body>
+</html>
